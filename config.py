@@ -1,1 +1,3 @@
-
+token = ""
+chatid = ""
+prefix = ""
