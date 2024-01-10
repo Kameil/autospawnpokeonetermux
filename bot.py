@@ -1,4 +1,4 @@
-import re, os, asyncio, random, string, keep_alive, random, time
+import re, os, asyncio, random, string, random, time
 from discord.ext import commands, tasks
 from termcolor import colored
 
