@@ -2,14 +2,20 @@ import re, os, asyncio, random, string, keep_alive, random, time
 from discord.ext import commands, tasks
 from termcolor import colored
 
+
+from config import token as cfgtoken
+from config import chatid as cfgchat
+from config import prefix as cfgprefix
+prefixo = cfgprefix
+token = cfgtoken
+chat = cfgchat 
+
+
 pokeone = 473020399060385792
-prefixo = os.environ['prefix']
 paused = False
-token = os.environ['user_token']
-chat = os.environ['chat_id']
 send_s = time.time()
 
-client = commands.Bot(command_prefix='&', help_command=None)
+client = commands.Bot(command_prefix=str(prefixo), help_command=None)
 esperar = [60.0, 120.0, 90.0]
 
 @tasks.loop(seconds=random.choice(esperar))
