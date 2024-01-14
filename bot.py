@@ -125,7 +125,6 @@ async def pokeoneautospawn():
     await asyncio.sleep(1)
     print(colored(f'iniciando autospawn com prefix: "{prefixo}"...', 'black', 'on_white'))
     
-keep_alive.keep_alive()
 asyncio.run(pokeoneautospawn())
 try:
     print(discord.__version__)
