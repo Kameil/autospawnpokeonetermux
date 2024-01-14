@@ -15,7 +15,7 @@ pokeone = 473020399060385792
 paused = False
 send_s = time.time()
 
-client = commands.Bot(command_prefix=str(prefixo), help_command=None)
+client = commands.Bot(command_prefix="×§∆", help_command=None)
 esperar = [60.0, 120.0, 90.0]
 
 @tasks.loop(seconds=random.choice(esperar))
